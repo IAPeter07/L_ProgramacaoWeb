@@ -19,8 +19,10 @@
             //IMPRIMA
             echo("Seja Bem-vindo(a)");
         }
-    
+
+        //Outra Variavel idade recebe valor '23'
         $idade = 23;
+        //Variavel identidade recebe o valor booleando 'VERDADEIRO'
         $identidade = true;
         //SE a variavel ($idade) for maior que '18' E a variavel($identidade) For'VERDADEIRA'
         if ($idade > 18 && $identidade == true){
