@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <!-- Titulo da Pagina-->
+     <h1>Cadastre-se</h1>
+     <form action="submit.php" method="POST">
+        <!-- Campo para inserção do nome do usuário -->
+         <label for="username">Nome de Usuário:</label>
+         <input type="text" id="username" name="username" required><br><br>
+         <!-- Campo apra inserção do email-->
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required><br><br>
+         <!-- Campo para inserção de senha-->
+         <label for="password">Senha:</label>
+         <input type="password" id="password" name="password" required><br><br>
+         <!-- Botãopara enviar o Formulário-->
+         <input type="submit" value="Registrar">
+     </form>
+</body>
+</html>
