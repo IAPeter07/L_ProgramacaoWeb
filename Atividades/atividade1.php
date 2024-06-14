@@ -27,20 +27,20 @@
         //Função abstrata definida para Carro
         function acelerar($km){
             $this-> velocidade += $km;
-            echo("A Velocidade do Seu Carro é de: " . $this-> velocidade);
+            echo("A Velocidade do Seu Carro é de: " . $this-> velocidade . "<br>");
             if($km> 100){
-                echo("A Velocidade Maxima legalmente é de até 100 km/h");
+                echo("A Velocidade Maxima legalmente é de até 100 km/h <br><br>");
             }   
             else{
-                echo("A Velocidade está aceitavel para um Carro");
+                echo("A Velocidade está aceitavel para um Carro <br><br>");
             }
         }
         #Função de Exibir os Detalhes do Veiculo
         public function exibirDetalhes(){
-            echo("ID: " . $this-> id . "<br>");
+            echo("ID do Carro: " . $this-> id . "<br>");
             echo("Marca: " . $this-> marca . "<br>");
             echo("Ano: " . $this-> ano . "<br>");
-            echo("Cor: " . $this-> cor . "<br>"); 
+            echo("Cor: " . $this-> cor . "<br><br>"); 
         }
 
     }
@@ -49,20 +49,20 @@
         //Função abstrata definida para Moto
         function acelerar($km){
             $this-> velocidade += $km;
-            echo("A Velocidade da sua Moto é de: " . $this-> velocidade); 
+            echo("A Velocidade da sua Moto é de: " . $this-> velocidade . "<br>"); 
             if($km > 90){
-                echo("A Velocidade Maxima legalmente é de até 100 km/h");
+                echo("A Velocidade Maxima legalmente é de até 100 km/h <br><br>");
             }   
             else{
-                echo("A Velocidade está aceitavel para uma M");
+                echo("A Velocidade está aceitavel para uma M <br><br>");
             }
         }
         #Função de Exibir os Detalhes do Veiculo
-        public function exibirDetalhes(){
-            echo("ID: " . $this-> id . "<br>");
+        public function exibirDetalhes(){  
+            echo("ID da Moto: " . $this-> id . "<br>");
             echo("Marca: " . $this-> marca . "<br>");
             echo("Ano: " . $this-> ano . "<br>");
-            echo("Cor: " . $this-> cor . "<br>"); 
+            echo("Cor: " . $this-> cor . "<br><br>");
         }
     }
 
@@ -75,4 +75,8 @@
     
     $moto1 -> registrarVeiculo("xxx","Yamaha","MT-03","2018","Preto");
     $moto1 -> acelerar(100);
+
+    //Printando os Resultados dos Objetos instanciando as Classes
+    echo($carro1 -> exibirDetalhes());
+    echo($moto1 -> exibirDetalhes());
 ?>
