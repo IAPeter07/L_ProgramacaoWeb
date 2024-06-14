@@ -21,7 +21,7 @@
         //Função Abstrata para definir nas classes filhas
         abstract function acelerar($velocidade);
     }
-
+    
     #Classe Filho 'Carro'
     class Carro extends Veiculo{
         //Função abstrata definida para Carro
@@ -51,7 +51,7 @@
             $this-> velocidade += $km;
             echo("A Velocidade da sua Moto é de: " . $this-> velocidade . "<br>"); 
             if($km > 90){
-                echo("A Velocidade Maxima legalmente é de até 100 km/h <br><br>");
+                echo("A Velocidade Maxima legalmente é de até 90 km/h <br><br>");
             }   
             else{
                 echo("A Velocidade está aceitavel para uma M <br><br>");
@@ -65,18 +65,4 @@
             echo("Cor: " . $this-> cor . "<br><br>");
         }
     }
-
-    //Instanciando As Classes
-    $carro1 = new Carro();
-    $moto1 = new Moto();
-    //Utilizando os Metodos
-    $carro1 -> registrarVeiculo("xxx","Chevrolet","Onix","2025","Branco");
-    $carro1 -> acelerar(90);
-    
-    $moto1 -> registrarVeiculo("xxx","Yamaha","MT-03","2018","Preto");
-    $moto1 -> acelerar(100);
-
-    //Printando os Resultados dos Objetos instanciando as Classes
-    echo($carro1 -> exibirDetalhes());
-    echo($moto1 -> exibirDetalhes());
 ?>
